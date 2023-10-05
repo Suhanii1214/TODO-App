@@ -1,11 +1,23 @@
 import { useState } from 'react'
+import { TodoTitle } from './components/TodoTitle'
+import { TodoHeader } from './components/TodoHeader'
+import { TodoItem } from './components/TodoItem'
+import {Toaster} from "react-hot-toast"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      
+      <TodoTitle/>
+      <TodoHeader/>
+      <TodoItem/>
+      <Toaster 
+      position='bottom-right'
+      toastOptions={{
+        style: {
+          fontSize: '1.4rem'
+        }
+      }}/>
     </>
   )
 }
