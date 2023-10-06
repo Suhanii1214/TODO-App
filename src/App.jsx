@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { TodoTitle } from './components/TodoTitle'
 import { TodoHeader } from './components/TodoHeader'
-import { TodoItem } from './components/TodoItem'
 import {Toaster} from "react-hot-toast"
+import { AppContent } from './components/AppContent'
 
 function App() {
 
@@ -10,7 +10,7 @@ function App() {
     <>
       <TodoTitle/>
       <TodoHeader/>
-      <TodoItem/>
+      <AppContent/>
       <Toaster 
       position='bottom-right'
       toastOptions={{
